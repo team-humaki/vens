@@ -125,7 +125,7 @@ Download the latest release for your OS/architecture from the [releases page](ht
     ```
 
 !!! note
-    Assets are named `vens-<tag>-<os>-<arch>.tar.gz`, built for linux and darwin on amd64 and arm64. There is no prebuilt Windows binary today, and `go install` does not build on Windows either: `vens generate` calls `syscall.Umask`, which Windows has no equivalent of. See the [releases page](https://github.com/venslabs/vens/releases) for the current tag.
+    Assets are named `vens-<tag>-<os>-<arch>.tar.gz`, built for linux and darwin on amd64 and arm64 (the release Makefile targets those platforms only). There is no prebuilt Windows binary today, but `go install github.com/venslabs/vens/cmd/vens@latest` works on Windows from source. Compiling locally is not the same as shipping a release asset. See the [releases page](https://github.com/venslabs/vens/releases) for the current tag.
 
 ---
 
